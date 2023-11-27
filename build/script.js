@@ -4,7 +4,7 @@ const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)];
+let rightGuessString = "marry";
 
 console.log(rightGuessString);
 
@@ -106,9 +106,16 @@ function checkGuess() {
       shadeKeyBoard(guessString.charAt(i) + "", letterColor[i]);
     }, delay);
   }
+checkWord(guessString);
+  
+}
 
+function checkWord(guessStr){
+  let guessString = guessStr;
   if (guessString === rightGuessString) {
-    toastr.success("You guessed right! Game over!");
+    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+    setTimeout(animateCSSVinayak,1500,row,"tada");
+    setTimeout(animateWin,2200);
     guessesRemaining = 0;
     return;
   } else {
@@ -123,12 +130,195 @@ function checkGuess() {
   }
 }
 
+function animateWin(){
+    let row = document.getElementsByClassName("letter-row")[0];
+    let box = row.children[0];
+    let delay = 400;
+    let delayCount = 1;
+
+
+
+    setTimeout(() => {
+      row = document.getElementsByClassName("letter-row")[0];
+      box = row.children[0];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "W";
+    
+      box = row.children[1];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "I";
+
+      box = row.children[2];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "L";
+    
+      box = row.children[3];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "L";
+   
+      box = row.children[4];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+    }, delay*delayCount);
+
+    delayCount = delayCount+1;
+
+    setTimeout(() => {
+      row = document.getElementsByClassName("letter-row")[1];
+      box = row.children[0];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "Y";
+    
+      box = row.children[1];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "O";
+
+      box = row.children[2];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "U";
+    
+      box = row.children[3];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+   
+      box = row.children[4];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+    }, delay*delayCount);
+
+    delayCount = delayCount+1;
+
+    setTimeout(() => {
+      row = document.getElementsByClassName("letter-row")[2];
+      box = row.children[0];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "green";
+      box.textContent = "M";
+    
+      box = row.children[1];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "green";
+      box.textContent = "A";
+
+      box = row.children[2];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "green";
+      box.textContent = "R";
+    
+      box = row.children[3];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "green";
+      box.textContent = "R";
+   
+      box = row.children[4];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "green";
+      box.textContent = "Y";
+
+    }, delay*delayCount);
+
+    delayCount = delayCount+1;
+
+    setTimeout(() => {
+      row = document.getElementsByClassName("letter-row")[3];
+      box = row.children[0];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "M";
+    
+      box = row.children[1];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "E";
+
+      box = row.children[2];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "pink";
+      box.textContent = "?";
+    
+      box = row.children[3];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+   
+      box = row.children[4];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+      row = document.getElementsByClassName("letter-row")[4];
+      box = row.children[0];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+    
+      box = row.children[1];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+      box = row.children[2];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+    
+      box = row.children[3];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+   
+      box = row.children[4];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+      row = document.getElementsByClassName("letter-row")[5];
+      box = row.children[0];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+    
+      box = row.children[1];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+      box = row.children[2];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+    
+      box = row.children[3];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+   
+      box = row.children[4];
+      animateCSSVinayak(box, "flipInX");
+      box.style.backgroundColor = "white";
+      box.textContent = "";
+
+    }, delay*delayCount);
+   
+}
+
 function insertLetter(pressedKey) {
   if (nextLetter === 5) {
     return;
   }
   pressedKey = pressedKey.toLowerCase();
-
   let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
   let box = row.children[nextLetter];
   animateCSS(box, "pulse");
@@ -138,7 +328,7 @@ function insertLetter(pressedKey) {
   nextLetter += 1;
 }
 
-const animateCSS = (element, animation, prefix = "animate__") =>
+const animateCSS = (element, animation, prefix = "animate__") => {
   // We create a Promise and return it
   new Promise((resolve, reject) => {
     const animationName = `${prefix}${animation}`;
@@ -157,6 +347,26 @@ const animateCSS = (element, animation, prefix = "animate__") =>
 
     node.addEventListener("animationend", handleAnimationEnd, { once: true });
   });
+}
+
+const animateCSSVinayak = (element, animation, prefix = "animate__") => {
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    // const node = document.querySelector(element);
+    const node = element;
+    node.style.setProperty("--animate-duration", "1.2s");
+    node.classList.add(`${prefix}animated`, animationName);
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve("Animation ended");
+    }
+
+    node.addEventListener("animationend", handleAnimationEnd, { once: true });
+  });
+}
 
 document.addEventListener("keyup", (e) => {
   if (guessesRemaining === 0) {
