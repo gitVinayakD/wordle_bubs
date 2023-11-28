@@ -40,6 +40,8 @@ function shadeKeyBoard(letter, color) {
       }
 
       elem.style.backgroundColor = color;
+      elem.style.borderColor = color;
+      elem.style.color = "white"; 
       break;
     }
   }
