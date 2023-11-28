@@ -371,7 +371,7 @@ function animateWin(){
       box.style.backgroundColor = "white";
       box.style.borderColor = "gray";
       box.textContent = "";
-      
+    
       
 
       // row = document.createElement("div");
