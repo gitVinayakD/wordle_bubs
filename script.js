@@ -143,10 +143,12 @@ function animateWin(){
 
     let fireworks = document.querySelector("#overlay");
     setTimeout(() => {
+    animateCSSVinayak(fireworks, "fadeIn");
     fireworks.style.setProperty("display","flex");
     },delay*delayCount);
     delayCount=delayCount+20;
     setTimeout(() => {
+      animateCSSVinayak(fireworks, "fadeOut");
       fireworks.style.setProperty("display","none");
     },delay*delayCount);
     delayCount=delayCount+1;
@@ -426,7 +428,7 @@ const animateCSS = (element, animation, prefix = "animate__") => {
     const animationName = `${prefix}${animation}`;
     // const node = document.querySelector(element);
     const node = element;
-    node.style.setProperty("--animate-duration", "0.6s");
+    node.style.setProperty("--animate-duration", "0.8s");
 
     node.classList.add(`${prefix}animated`, animationName);
 
