@@ -1,3 +1,4 @@
+
 h1 {
  text-align: center;
 }
@@ -6,11 +7,19 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position:relative;
 }
 
+#overlay{ 
+  position: absolute;
+  display: none;
+}
+
+
 .letter-box {
+  font-family: Helvetica;
   border: 2px solid gray;
-  border-radius: 3px;
+  border-radius: 1px;
   margin: 2px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -23,7 +32,20 @@ h1 {
 }
 
 .filled-box {
-  border: 2px solid black;
+  border: 2px solid grey;
+}
+
+.bhawana {
+  border: 2px solid gray;
+  border-radius: 1px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 17rem;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .letter-row {
