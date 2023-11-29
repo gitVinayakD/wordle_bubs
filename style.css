@@ -19,7 +19,9 @@ h1 {
   position: absolute;
   bottom: 3px;
   display: none;
+  justify-content: center;
   height: 100%;
+  width: 100%;
 }
 
 
