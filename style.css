@@ -17,13 +17,15 @@ h1 {
 
 #overlay{ 
   position: absolute;
+  bottom: 3px;
   display: none;
+  height: 360px;
 }
 
 
 .letter-box {
   font-family: Helvetica;
-  border: 2px solid gray;
+  border: 2px solid #d3d6da;
   border-radius: 1px;
   margin: 2px;
   font-size: 2.5rem;

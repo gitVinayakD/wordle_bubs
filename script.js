@@ -189,7 +189,7 @@ function animateWin(){
       box = row.children[4];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
     }, delay*delayCount);
@@ -222,13 +222,13 @@ function animateWin(){
       box = row.children[3];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
    
       box = row.children[4];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
     }, delay*delayCount);
@@ -302,13 +302,13 @@ function animateWin(){
       box = row.children[3];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
    
       box = row.children[4];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
     }, delay*delayCount);
     delayCount = delayCount + 1; 
@@ -318,62 +318,62 @@ function animateWin(){
       box = row.children[0];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[1];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[2];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[3];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[4];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       row = document.getElementsByClassName("letter-row")[5];
       box = row.children[0];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[1];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[2];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "💍";
 
       box = row.children[3];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
 
       box = row.children[4];
       animateCSSVinayak(box, "flipInX");
       box.style.backgroundColor = "white";
-      box.style.borderColor = "gray";
+      box.style.borderColor = "#d3d6da";
       box.textContent = "";
     
       
