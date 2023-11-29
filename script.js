@@ -38,7 +38,7 @@ function shadeKeyBoard(letter, color) {
       if (oldColor === yHex && color !== gHex) {
         return;
       }
-
+      animateCSS(elem, "pulse");
       elem.style.backgroundColor = color;
       elem.style.borderColor = color;
       elem.style.color = "white"; 
@@ -131,7 +131,49 @@ function checkWord(guessStr){
     nextLetter = 0;
 
     if (guessesRemaining === 0) {
-      toastr.error("You've run out of guesses! Game over!");
+      let row = document.getElementsByClassName("letter-row")[5];
+      setTimeout(() => {
+        animateCSS(row,"headShake");
+      },1500);
+      guessesRemaining=1;
+      setTimeout(() => {
+        let box = row.children[0];
+        // animateCSSVinayak(box, "flipInX");
+        box.style.backgroundColor = "white";
+        box.style.borderColor = "#d3d6da";
+        box.textContent = "";
+        box.style.color = "black";
+
+        box = row.children[1];
+        // animateCSSVinayak(box, "flipInX");
+        box.style.backgroundColor = "white";
+        box.style.borderColor = "#d3d6da";
+        box.textContent = "";
+        box.style.color = "black";
+
+        box = row.children[2];
+       // animateCSSVinayak(box, "flipInX");
+        box.style.backgroundColor = "white";
+        box.style.borderColor = "#d3d6da";
+        box.textContent = "";
+        box.style.color = "black";
+
+        box = row.children[3];
+        //animateCSSVinayak(box, "flipInX");
+        box.style.backgroundColor = "white";
+        box.style.borderColor = "#d3d6da";
+        box.textContent = "";
+        box.style.color = "black";
+
+        box = row.children[4];
+        // animateCSSVinayak(box, "flipInX");
+        box.style.backgroundColor = "white";
+        box.style.borderColor = "#d3d6da";
+        box.textContent = "";
+        box.style.color = "black";
+
+        toastr.info("Try again ❤️");
+      },2300);
     }
   }
 }
