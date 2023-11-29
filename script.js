@@ -132,7 +132,6 @@ function checkWord(guessStr){
 
     if (guessesRemaining === 0) {
       toastr.error("You've run out of guesses! Game over!");
-      toastr.info(`The right word was: "${rightGuessString}"`);
     }
   }
 }
@@ -146,7 +145,7 @@ function animateWin(){
     animateCSSVinayak(fireworks, "fadeIn");
     fireworks.style.setProperty("display","flex");
     },delay*delayCount);
-    delayCount=delayCount+20;
+    delayCount=delayCount+9;
     setTimeout(() => {
       animateCSSVinayak(fireworks, "fadeOut");
       fireworks.style.setProperty("display","none");
