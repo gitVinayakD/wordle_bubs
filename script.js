@@ -145,7 +145,7 @@ function animateWin(){
     animateCSSVinayak(fireworks, "fadeIn");
     fireworks.style.setProperty("display","flex");
     },delay*delayCount);
-    delayCount=delayCount+9;
+    delayCount=delayCount+3;
     setTimeout(() => {
       animateCSSVinayak(fireworks, "fadeOut");
       fireworks.style.setProperty("display","none");
